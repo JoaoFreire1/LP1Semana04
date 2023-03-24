@@ -17,9 +17,10 @@ namespace Power2Method
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            Powersof2Until5();
-            Powersof2Until5();
+            Console.WriteLine("Hello, Please Write a number!");
+            int n = Convert.ToInt32(Console.ReadLine());
+            Powersof2Untiln();
+            Powersof2Untiln();
         }
     }
 }
