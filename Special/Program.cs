@@ -6,8 +6,7 @@ namespace Special
     {
         private static void Main(string[] args)
         {
-            string sinput = Console.ReadLine();
-            int input = int.Parse(sinput);
+            int input = int.Parse(args[0]);
             int result = GetSpecial(input);    
             Console.WriteLine(result); 
         }
