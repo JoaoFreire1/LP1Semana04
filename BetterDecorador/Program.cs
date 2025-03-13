@@ -6,13 +6,21 @@ namespace BetterDecorador
     {
         private static void Main(string[] args)
         {
-            Console . WriteLine (Decor("Good Morning!" , '*'));
-            Console . WriteLine (Decor("Good Evening !" , '.'));
+            Console.WriteLine(Decor("Good Morning!" , '*', 3));
+            Console.WriteLine(Decor("Good Evening!" , '.', 3));
         }
 
-        private static string Decor( string s , char dec)
+        private static string Decor( string s , char dec, int ntimes)
         {
-            return $"{dec}{dec}{dec} {s} {dec}{dec}{dec}";
+            string stringdecor = "";
+
+            for (int x = 0; x < ntimes; x++)
+            {
+                stringdecor += dec;
+            }
+           
+            return $"{stringdecor} {s} {stringdecor}";
+
         }
     }
 }
