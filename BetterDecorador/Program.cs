@@ -13,6 +13,11 @@ namespace BetterDecorador
         /// <param name="args">Console Arguments</param>
         private static void Main(string[] args)
         {
+            /// <summary>
+            /// Checks if args lenght is correct
+            /// </summary>
+            /// <param name="args"></param>
+            /// <returns>string</returns>
             if (args.Length != 3)
             {
                 Console.WriteLine(Decor());
@@ -45,6 +50,10 @@ namespace BetterDecorador
 
         }
 
+        /// <summary>
+        /// Recursive function in case of fail
+        /// </summary>
+        /// <returns> Decor function with established string</returns>
         private static string Decor()
         {
             return Decor("User did not specify args!", '=', 3);
